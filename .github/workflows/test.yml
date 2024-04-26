@@ -43,5 +43,5 @@ jobs:
       # do not run if disable-gas-snapshot is true
       - name: Compare gas reports
         run: |
-          FOUNDRY_PROFILE=snapshot forge snapshot --check --silent --tolerance ${{ inputs.gas-diff-tolerance }}
+          FOUNDRY_PROFILE=snapshot forge snapshot --check --silent --tolerance 2
         id: gas-snapshot
